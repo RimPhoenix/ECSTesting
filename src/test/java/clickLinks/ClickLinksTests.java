@@ -33,7 +33,6 @@ public class ClickLinksTests extends BaseTests {
         checkUrl("privacy-policy");
         checkUrl("frequently-asked-questions");
         checkUrl("feedback");
-
     }
     @Test
     public void userTest() {
