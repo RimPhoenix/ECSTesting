@@ -1,0 +1,31 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class HomePage {
+
+    private WebDriver driver;
+
+    public HomePage(WebDriver driver) {
+        this.driver = driver;
+    }
+    private void clickLink(String linkText) {
+        driver.findElement(By.linkText(linkText)).click(); }
+
+//    public ProductsPage clickProducts() {
+//        clickLink("Products");
+//        return new ProductsPage(driver);
+//    }
+    public SpecialsPage clickSpecials(){
+        clickLink("Specials");
+        return new SpecialsPage(driver);
+    }
+
+    public ContactUsPage clickContactUs(){
+        clickLink("Contact Us");
+        return new ContactUsPage(driver);
+    }
+
+
+}
