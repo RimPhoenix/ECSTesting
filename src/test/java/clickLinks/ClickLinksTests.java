@@ -35,8 +35,37 @@ public class ClickLinksTests extends BaseTests {
         checkUrl("feedback");
     }
     @Test
-    public void userTest() {
-
+    public void userClickingAroundTest() {
+        System.out.println(driver.getTitle());
+        homePage.clickAboutUs();
+        System.out.println(driver.getTitle());
+        getWindowManager().goBack();
+        homePage.clickContactUs();
+        System.out.println(driver.getTitle());
+        getWindowManager().goBack();
+        homePage.clickLocations();
+        System.out.println(driver.getTitle());
+        getWindowManager().goBack();
+        homePage.clickSpecials();
+        System.out.println(driver.getTitle());
+        getWindowManager().goBack();
+        homePage.clickJoinTheTeam();
+        System.out.println(driver.getTitle());
+        getWindowManager().goBack();
+        homePage.clickShippingAndReturns();
+        System.out.println(driver.getTitle());
+        getWindowManager().goBack();
+        homePage.clickPrivacyPolicy();
+        System.out.println(driver.getTitle());
+        getWindowManager().goBack();
+        homePage.clickFAQs();
+        System.out.println(driver.getTitle());
+        getWindowManager().goBack();
+        homePage.clickYourFeedback();
+        System.out.println(driver.getTitle());
+        getWindowManager().goBack();
+        homePage.clickProducts();
+        System.out.println(driver.getTitle());
     }
 
     @Test

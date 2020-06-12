@@ -41,6 +41,72 @@ public class JoinTheTeamPage {
     private By whyApplyField = By.id("input_29");
     private By videoUpload = By.id("input_88");
     private By hearAboutSelect = By.id("input_30");
+    private By highSchoolField = By.id("input_33");
+    private By yearsOfHS = By.id("input_34");
+    private By graduateRdoBtn = By.id("input_35_0");
+    private By HSGPA = By.id("input_36");
+    private By collegeDD = By.id("input_37");
+    private By graduationYear = By.id("input_38");
+    private By collegeGPA = By.id("input_39");
+    private By servedArmedRdoBtn = By.id("input_41_0");
+    private By employerName = By.id("input_47");
+    private By hrPay = By.id("input_48");
+    private By startDateMonth = By.id("month_49");
+    private By startDateDay = By.id("day_49");
+    private By startDateYear = By.id("year_49");
+    private By endDateMonth = By.id("month_50");
+    private By endDateDay = By.id("day_50");
+    private By endDateYear = By.id("year_50");
+    private By employerName1 = By.id("input_52");
+    private By hrPay1 = By.id("input_53");
+    private By startDateMonth1 = By.id("month_54");
+    private By startDateDay1 = By.id("day_54");
+    private By startDateYear1 = By.id("year_54");
+    private By endDateMonth1 = By.id("month_55");
+    private By endDateDay1 = By.id("day_55");
+    private By endDateYear1 = By.id("year_55");
+    private By employerName2 = By.id("input_57");
+    private By hrPay2 = By.id("input_58");
+    private By startDateMonth2 = By.id("month_59");
+    private By startDateDay2 = By.id("day_59");
+    private By startDateYear2 = By.id("year_59");
+    private By endDateMonth2 = By.id("month_60");
+    private By endDateDay2 = By.id("day_60");
+    private By endDateYear2 = By.id("year_60");
+    private By skillsField = By.id("input_62");
+    private By volunteerField = By.id("input_63");
+    private By refPrefixDD = By.id("prefix_67");
+    private By refFirstName = By.id("first_67");
+    private By refLastName = By.id("last_67");
+    private By refSuffix = By.id("suffix_67");
+    private By refRelation = By.id("input_68");
+    private By refPhoneArea = By.id("input_69_area");
+    private By refPhoneNumber = By.id("input_69_phone");
+    private By refEmail = By.id("input_70");
+    private By refYearsKnown = By.id("input_71");
+    private By ref1PrefixDD = By.id("prefix_74");
+    private By ref1FirstName = By.id("first_74");
+    private By ref1LastName = By.id("last_74");
+    private By ref1Suffix = By.id("suffix_74");
+    private By ref1Relation = By.id("input_75");
+    private By ref1PhoneArea = By.id("input_76_area");
+    private By ref1PhoneNumber = By.id("input_76_phone");
+    //private By ref1Email = By.id("input_77");
+    private By ref1YearsKnown = By.id("input_77");
+    private By todayDateMonth = By.id("month_80");
+    private By todayDateDay = By.id("day_80");
+    private By todayDateYear = By.id("year_80");
+    private By signature = By.id("input_81");
+    private By attachResumeBtn = By.id("input_83");
+    private By submitApplicationBtn = By.id("input_85");
+    private By clearFormBtn = By.id("input_reset_85");
+    private By printFormBtn = By.id("input_print_85");
+
+
+
+
+
+
 
 
 }

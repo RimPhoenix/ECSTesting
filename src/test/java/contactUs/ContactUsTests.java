@@ -22,7 +22,7 @@ public class ContactUsTests extends BaseTests {
         contactUsPage.setPhoneNumberField("555-5555");
         contactUsPage.setLocationSelection("Conway, AR");
         contactUsPage.setMessageField("Disregard this message, this is from an automated test");
-        contactUsPage.setSubmitBtn();
+       // contactUsPage.setSubmitBtn();
 
 
     }
