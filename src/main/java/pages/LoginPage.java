@@ -15,10 +15,9 @@ public class LoginPage {
     public LoginPage(EventFiringWebDriver driver) {LoginPage.driver = driver;}
 
     public static void adminlogin() {
-        WebElement loginDropdownBtn = driver.findElement(By.xpath("//a[@class='account-dropdown-trigger btn btn-link']"));
-       loginDropdownBtn.click();
-        WebDriverWait wait = new WebDriverWait(driver, 2);
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("desktop-login-username"))));
+       WebElement loginDropDownBtn = driver.findElement(By.xpath("//a[@class='account-dropdown-trigger btn btn-link']"));
+       loginDropDownBtn.click();
+       WebDriverWait wait = new WebDriverWait(driver, 2);wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("desktop-login-username"))));
        WebElement userName = driver.findElement(By.id("desktop-login-username"));
        userName.sendKeys(Constants.AdminUserName);
        WebElement password = driver.findElement(By.id("desktop-login-password"));
@@ -26,6 +25,20 @@ public class LoginPage {
        WebElement loginBtn = driver.findElement(By.xpath("//button[@name='desktop']"));
        loginBtn.click();
         }
+
+    public static void newUserLogin() {
+        WebElement loginDropDownBtn = driver.findElement(By.xpath("//a[@class='account-dropdown-trigger btn btn-link']"));
+        loginDropDownBtn.click();
+        WebDriverWait wait = new WebDriverWait(driver, 2);
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("desktop-login-username"))));
+        WebElement userName = driver.findElement(By.id("desktop-login-username"));
+        userName.sendKeys(Constants.NewPatientUserName);
+        WebElement password = driver.findElement(By.id("desktop-login-password"));
+        password.sendKeys(Constants.NewPatientPassword);
+        WebElement loginBtn = driver.findElement(By.xpath("//button[@name='desktop']"));
+        loginBtn.click();
+    }
+
 
 
     }

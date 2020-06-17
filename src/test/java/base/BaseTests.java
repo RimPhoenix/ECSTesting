@@ -15,12 +15,15 @@ import org.testng.annotations.BeforeMethod;
 import pages.HomePage;
 import pages.LoginPage;
 import utils.WindowManager;
-
+import javax.swing.text.DateFormatter;
 import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.Calendar;
 import java.util.Date;
+
 
 
 public class BaseTests {
@@ -77,6 +80,23 @@ public class BaseTests {
     DateFormat dateAndTimeForTrackingNumberFormat = new SimpleDateFormat("YYHHmmss");
     Date dateAndTimeForTrackingNumber = new Date();
     public String trackingNumberDandT = dateAndTimeForTrackingNumberFormat.format(dateAndTimeForTrackingNumber);
+
+    //Date get the Month
+    DateFormat dateMonthFormat = new SimpleDateFormat("MM");
+    Date dateMonth = new Date();
+    public String todaysMonth = dateMonthFormat.format(dateMonth);
+
+    //Date get the Day
+    DateFormat dateDayFormat = new SimpleDateFormat("dd");
+    Date dateDay = new Date();
+    public String todaysDay = dateDayFormat.format(dateDay);
+
+    //Date get the Year
+    DateFormat dateYearFormat = new SimpleDateFormat("YYYY");
+    Date dateYear = new Date();
+    public String todaysYear = dateYearFormat.format(dateYear);
+
+
 
     @BeforeClass
 

@@ -9,7 +9,7 @@ public class SpecialsTests extends BaseTests {
 
     @Test
 
-    public void checkTheSpeicals(){
+    public void checkTheSpecials(){
 
         SpecialsPage specialsPage = homePage.clickSpecials();
         specialsPage.setSpecialCode1();

@@ -10,6 +10,8 @@ public class HomePage {
     public HomePage(WebDriver driver) {
         this.driver = driver;
     }
+
+    private By registerLink = By.xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/a[1]");
     private void clickLink(String linkText) {
         driver.findElement(By.linkText(linkText)).click(); }
 
@@ -67,5 +69,14 @@ public class HomePage {
         return new ProductsPage(driver);
     }
 
+    public RegisterUserPage clickRegisterUser(){
+        driver.get("https://www.successvision.help/register");
+        return new RegisterUserPage(driver);
+    }
+
+    public ProfilePage clickProfilePage(){
+        driver.get("https://successvision.help/profiles");
+        return new ProfilePage(driver);
+    }
 
 }

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="8" passed="4" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-07-02T21:50:41 CDT" name="All Test Suite" finished-at="2020-07-02T21:53:56 CDT" duration-ms="195061">
+    <groups>
+    </groups>
+    <test started-at="2020-07-02T21:50:41 CDT" name="C:/Users/Student/IdeaProjects/SVOTesting/src/test/java/patients/PatientsTests.java" finished-at="2020-07-02T21:53:56 CDT" duration-ms="195061">
+      <class name="joinTheTeam.JoinTheTeamTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:joinTheTeam.JoinTheTeamTests@780cb77]" started-at="2020-07-02T21:51:45 CDT" name="setUp" finished-at="2020-07-02T21:52:01 CDT" duration-ms="16240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goToLogin()[pri:0, instance:joinTheTeam.JoinTheTeamTests@780cb77]" started-at="2020-07-02T21:52:01 CDT" name="goToLogin" finished-at="2020-07-02T21:52:04 CDT" duration-ms="2945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLogin -->
+        <test-method signature="testResume()[pri:0, instance:joinTheTeam.JoinTheTeamTests@780cb77]" started-at="2020-07-02T21:52:04 CDT" name="testResume" finished-at="2020-07-02T21:52:09 CDT" duration-ms="4778" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#input_10_0"}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RMORITZ', ip: '192.168.1.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Student\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57834}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 95785d8395abda5408f8c9436192157a
+*** Element info: {Using=id, value=input_10_0}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#input_10_0"}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RMORITZ', ip: '192.168.1.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Student\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57834}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 95785d8395abda5408f8c9436192157a
+*** Element info: {Using=id, value=input_10_0}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+at pages.JoinTheTeamPage.setPrevApplyRdoBtn(JoinTheTeamPage.java:159)
+at joinTheTeam.JoinTheTeamTests.testResume(JoinTheTeamTests.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResume -->
+        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:joinTheTeam.JoinTheTeamTests@780cb77]" started-at="2020-07-02T21:52:09 CDT" name="recordFailure" finished-at="2020-07-02T21:52:10 CDT" duration-ms="1264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testResume status=FAILURE method=JoinTheTeamTests.testResume()[pri:0, instance:joinTheTeam.JoinTheTeamTests@780cb77] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure -->
+      </class> <!-- joinTheTeam.JoinTheTeamTests -->
+      <class name="profile.CreatingProfileTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:profile.CreatingProfileTests@691a7f8f]" started-at="2020-07-02T21:52:10 CDT" name="setUp" finished-at="2020-07-02T21:52:24 CDT" duration-ms="13667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goToLogin()[pri:0, instance:profile.CreatingProfileTests@691a7f8f]" started-at="2020-07-02T21:52:24 CDT" name="goToLogin" finished-at="2020-07-02T21:52:25 CDT" duration-ms="1297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLogin -->
+        <test-method signature="createRxProfile()[pri:0, instance:profile.CreatingProfileTests@691a7f8f]" started-at="2020-07-02T21:52:25 CDT" name="createRxProfile" finished-at="2020-07-02T21:52:35 CDT" duration-ms="9298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createRxProfile -->
+        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:profile.CreatingProfileTests@691a7f8f]" started-at="2020-07-02T21:52:35 CDT" name="recordFailure" finished-at="2020-07-02T21:52:35 CDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createRxProfile status=SUCCESS method=CreatingProfileTests.createRxProfile()[pri:0, instance:profile.CreatingProfileTests@691a7f8f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure -->
+      </class> <!-- profile.CreatingProfileTests -->
+      <class name="usersLogin.RegisterUserTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:usersLogin.RegisterUserTests@161b062a]" started-at="2020-07-02T21:53:14 CDT" name="setUp" finished-at="2020-07-02T21:53:43 CDT" duration-ms="28801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goToLogin()[pri:0, instance:usersLogin.RegisterUserTests@161b062a]" started-at="2020-07-02T21:53:43 CDT" name="goToLogin" finished-at="2020-07-02T21:53:45 CDT" duration-ms="1849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLogin -->
+        <test-method signature="testRegistering()[pri:0, instance:usersLogin.RegisterUserTests@161b062a]" started-at="2020-07-02T21:53:45 CDT" name="testRegistering" finished-at="2020-07-02T21:53:55 CDT" duration-ms="10094" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"body.nav-md.ng-scope:nth-child(2) div.container.body:nth-child(2) div.main_container div.right_col:nth-child(3) div.row:nth-child(9) div.col-md-12.col-sm-12.col-xs-12 div.x_panel tbody:nth-child(1) tr:nth-child(6) td:nth-child(2) div:nth-child(1) > button.btn.btn-xs.btn-dark:nth-child(1)"}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RMORITZ', ip: '192.168.1.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Student\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58181}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b306e9da25096b1a4f8e8fabd7e49e2e
+*** Element info: {Using=css selector, value=body.nav-md.ng-scope:nth-child(2) div.container.body:nth-child(2) div.main_container div.right_col:nth-child(3) div.row:nth-child(9) div.col-md-12.col-sm-12.col-xs-12 div.x_panel tbody:nth-child(1) tr:nth-child(6) td:nth-child(2) div:nth-child(1) > button.btn.btn-xs.btn-dark:nth-child(1)}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"body.nav-md.ng-scope:nth-child(2) div.container.body:nth-child(2) div.main_container div.right_col:nth-child(3) div.row:nth-child(9) div.col-md-12.col-sm-12.col-xs-12 div.x_panel tbody:nth-child(1) tr:nth-child(6) td:nth-child(2) div:nth-child(1) > button.btn.btn-xs.btn-dark:nth-child(1)"}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RMORITZ', ip: '192.168.1.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Student\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58181}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b306e9da25096b1a4f8e8fabd7e49e2e
+*** Element info: {Using=css selector, value=body.nav-md.ng-scope:nth-child(2) div.container.body:nth-child(2) div.main_container div.right_col:nth-child(3) div.row:nth-child(9) div.col-md-12.col-sm-12.col-xs-12 div.x_panel tbody:nth-child(1) tr:nth-child(6) td:nth-child(2) div:nth-child(1) > button.btn.btn-xs.btn-dark:nth-child(1)}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+at usersLogin.RegisterUserTests.testRegistering(RegisterUserTests.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistering -->
+        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:usersLogin.RegisterUserTests@161b062a]" started-at="2020-07-02T21:53:55 CDT" name="recordFailure" finished-at="2020-07-02T21:53:56 CDT" duration-ms="1534" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRegistering status=FAILURE method=RegisterUserTests.testRegistering()[pri:0, instance:usersLogin.RegisterUserTests@161b062a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure -->
+      </class> <!-- usersLogin.RegisterUserTests -->
+      <class name="specials.SpecialsTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:specials.SpecialsTests@50a7bc6e]" started-at="2020-07-02T21:52:35 CDT" name="setUp" finished-at="2020-07-02T21:52:57 CDT" duration-ms="22069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goToLogin()[pri:0, instance:specials.SpecialsTests@50a7bc6e]" started-at="2020-07-02T21:52:57 CDT" name="goToLogin" finished-at="2020-07-02T21:53:02 CDT" duration-ms="5227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLogin -->
+        <test-method signature="checkTheSpecials()[pri:0, instance:specials.SpecialsTests@50a7bc6e]" started-at="2020-07-02T21:53:02 CDT" name="checkTheSpecials" finished-at="2020-07-02T21:53:14 CDT" duration-ms="12033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTheSpecials -->
+        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:specials.SpecialsTests@50a7bc6e]" started-at="2020-07-02T21:53:14 CDT" name="recordFailure" finished-at="2020-07-02T21:53:14 CDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkTheSpecials status=SUCCESS method=SpecialsTests.checkTheSpecials()[pri:0, instance:specials.SpecialsTests@50a7bc6e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure -->
+      </class> <!-- specials.SpecialsTests -->
+      <class name="contactUs.ContactUsTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:contactUs.ContactUsTests@16aa0a0a]" started-at="2020-07-02T21:51:25 CDT" name="setUp" finished-at="2020-07-02T21:51:39 CDT" duration-ms="13688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goToLogin()[pri:0, instance:contactUs.ContactUsTests@16aa0a0a]" started-at="2020-07-02T21:51:39 CDT" name="goToLogin" finished-at="2020-07-02T21:51:41 CDT" duration-ms="2051" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLogin -->
+        <test-method signature="fillOutContactUsForm()[pri:0, instance:contactUs.ContactUsTests@16aa0a0a]" started-at="2020-07-02T21:51:41 CDT" name="fillOutContactUsForm" finished-at="2020-07-02T21:51:45 CDT" duration-ms="4294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillOutContactUsForm -->
+        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:contactUs.ContactUsTests@16aa0a0a]" started-at="2020-07-02T21:51:45 CDT" name="recordFailure" finished-at="2020-07-02T21:51:45 CDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=fillOutContactUsForm status=SUCCESS method=ContactUsTests.fillOutContactUsForm()[pri:0, instance:contactUs.ContactUsTests@16aa0a0a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure -->
+      </class> <!-- contactUs.ContactUsTests -->
+      <class name="clickLinks.ClickLinksTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:clickLinks.ClickLinksTests@1d548a08]" started-at="2020-07-02T21:50:41 CDT" name="setUp" finished-at="2020-07-02T21:51:01 CDT" duration-ms="19415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goToLogin()[pri:0, instance:clickLinks.ClickLinksTests@1d548a08]" started-at="2020-07-02T21:51:01 CDT" name="goToLogin" finished-at="2020-07-02T21:51:06 CDT" duration-ms="4909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLogin -->
+        <test-method signature="userClickingAroundTest()[pri:0, instance:clickLinks.ClickLinksTests@1d548a08]" started-at="2020-07-02T21:51:06 CDT" name="userClickingAroundTest" finished-at="2020-07-02T21:51:25 CDT" duration-ms="19204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userClickingAroundTest -->
+        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:clickLinks.ClickLinksTests@1d548a08]" started-at="2020-07-02T21:51:25 CDT" name="recordFailure" finished-at="2020-07-02T21:51:25 CDT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userClickingAroundTest status=SUCCESS method=ClickLinksTests.userClickingAroundTest()[pri:0, instance:clickLinks.ClickLinksTests@1d548a08] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure -->
+      </class> <!-- clickLinks.ClickLinksTests -->
+    </test> <!-- C:/Users/Student/IdeaProjects/SVOTesting/src/test/java/patients/PatientsTests.java -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
