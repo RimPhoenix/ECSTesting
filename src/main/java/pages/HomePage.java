@@ -79,4 +79,9 @@ public class HomePage {
         return new ProfilePage(driver);
     }
 
+    public BuyingProductPage clickBuyingProducts(){
+        driver.get("https://www.successvision.help/products");
+        return new BuyingProductPage(driver);
+    }
+
 }

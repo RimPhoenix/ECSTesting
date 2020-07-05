@@ -116,7 +116,7 @@ public class JoinTheTeamTests extends BaseTests {
 //         joinTheTeamPage.setRef1YearsKnown("6");
          joinTheTeamPage.setSignature("Ima Auto Test");
          joinTheTeamPage.setAttachResumeBtn("C:\\Users\\Student\\IdeaProjects\\ECSTesting\\resources\\videos\\puppy.jpg");
-        // joinTheTeamPage.setSubmitApplicationBtn();
+         //joinTheTeamPage.setSubmitApplicationBtn();
 
     }
 }
