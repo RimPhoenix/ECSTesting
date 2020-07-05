@@ -52,7 +52,7 @@ public class JoinTheTeamTests extends BaseTests {
          joinTheTeamPage.setDrugTestRdoBtn();
          joinTheTeamPage.setCrimeRdoBtn();
          joinTheTeamPage.setWhyApplyField("Because I like glasses");
-         String videoPath = "C:\\Users\\Student\\IdeaProjects\\ECSTesting\\resources\\videos\\puppyInGrass.mp4";
+         String videoPath = "C:\\Users\\Student\\IdeaProjects\\ECSTesting\\resources\\videos\\puppyShoes.mp4";
          joinTheTeamPage.setVideoUploadBtn(videoPath);
          joinTheTeamPage.selectHearAboutFromDD("Indeed");
          joinTheTeamPage.setHighSchoolField("HighSchool High");
