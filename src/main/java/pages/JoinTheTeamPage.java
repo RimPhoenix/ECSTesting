@@ -308,5 +308,7 @@ public class JoinTheTeamPage {
 
     public void setAttachResumeBtn(String pathToResume){driver.findElement(attachResumeBtn).sendKeys(pathToResume);}
 
-    public void setSubmitApplicationBtn(){driver.findElement(submitApplicationBtn).click();}
+    public void setSubmitApplicationBtn(){WebDriverWait wait = new WebDriverWait(driver, 5);
+        wait.until(ExpectedConditions.elementToBeClickable(submitApplicationBtn));
+        driver.findElement(submitApplicationBtn).click();}
 }

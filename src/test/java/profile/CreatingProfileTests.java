@@ -12,7 +12,7 @@ public class CreatingProfileTests extends BaseTests {
 
 @Test
 
-    public void createRxProfile(){
+    public void createRxProfile() throws InterruptedException {
 
     LoginPage.newUserLogin();
     ProfilePage profilePage = homePage.clickProfilePage();
@@ -35,7 +35,9 @@ public class CreatingProfileTests extends BaseTests {
     Calendar cal = Calendar.getInstance();
     cal.add(Calendar.YEAR, 1);
     profilePage.setExpirationDate(todaysDate + Keys.ARROW_UP);
-
+    profilePage.setUploadRx(System.getProperty("user.dir") + "\\resources\\videos\\puppy.jpg");
+    Thread.sleep(500);
+    profilePage.setCreateRxBtn();
 
 }
 

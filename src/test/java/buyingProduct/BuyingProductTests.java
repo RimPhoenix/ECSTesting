@@ -24,7 +24,6 @@ public class BuyingProductTests extends BaseTests {
 
         BuyingProductPage buyingProductPage = homePage.clickBuyingProducts();
         buyingProductPage.setChooseGlasses();
-        //driver.switchTo().frame(driver.findElement(By.tagName("h1")));
         buyingProductPage.setAddToCart();
         Thread.sleep(200);
         buyingProductPage.selectODSph("-1.25");
@@ -42,7 +41,7 @@ public class BuyingProductTests extends BaseTests {
         Calendar cal = Calendar.getInstance();
         cal.add(Calendar.YEAR, 1);
         buyingProductPage.setExpirationDate(todaysDate + Keys.ARROW_UP);
-        buyingProductPage.setUploadRx("C:\\Users\\Student\\IdeaProjects\\ECSTesting\\resources\\videos\\puppy.jpg");
+        buyingProductPage.setUploadRx(System.getProperty("user.dir") + "\\resources\\videos\\puppy.jpg");
         Thread.sleep(800);
         buyingProductPage.setAddRxBtn();
         Thread.sleep(300);
@@ -62,7 +61,6 @@ public class BuyingProductTests extends BaseTests {
         buyingProductPage.setReviewOdrBtn();
         System.out.println("driver= " + driver);
         Thread.sleep(200);
-//        driver.switchTo().frame(driver.findElement(By.id("vue-checkout")));
         buyingProductPage.setClickAddNoteField();
         buyingProductPage.setAddNote("Here is the test note I wrote.");
         buyingProductPage.setRefundCheckBox();
@@ -71,6 +69,7 @@ public class BuyingProductTests extends BaseTests {
         buyingProductPage.setCardExpDate("0825");
         buyingProductPage.setCardCvvNbr("456");
         buyingProductPage.setCardZip("66225");
+        Thread.sleep(2000);
         buyingProductPage.setCompleteOdrBtn();
         buyingProductPage.setContShoppingBtn();
     }

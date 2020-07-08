@@ -82,7 +82,7 @@ public class ProfilePage {
 
     public void setExpirationDate(String expDate){driver.findElement(expirationDate).sendKeys(expDate);}
 
-    public void setUploadRx(){driver.findElement(uploadRx).click();}
+    public void setUploadRx(String Rx){driver.findElement(uploadRx).sendKeys(Rx);}
 
     public void setCreateRxBtn(){driver.findElement(createRxBtn).click();}
 

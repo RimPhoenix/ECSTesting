@@ -52,7 +52,7 @@ public class JoinTheTeamTests extends BaseTests {
          joinTheTeamPage.setDrugTestRdoBtn();
          joinTheTeamPage.setCrimeRdoBtn();
          joinTheTeamPage.setWhyApplyField("Because I like glasses");
-         String videoPath = "C:\\Users\\Student\\IdeaProjects\\ECSTesting\\resources\\videos\\puppyShoes.mp4";
+         String videoPath = System.getProperty("user.dir") + "\\resources\\videos\\puppyShoes.mp4";
          joinTheTeamPage.setVideoUploadBtn(videoPath);
          joinTheTeamPage.selectHearAboutFromDD("Indeed");
          joinTheTeamPage.setHighSchoolField("HighSchool High");
@@ -115,8 +115,9 @@ public class JoinTheTeamTests extends BaseTests {
 //         joinTheTeamPage.setRef1PhoneNumber("555-1234");
 //         joinTheTeamPage.setRef1YearsKnown("6");
          joinTheTeamPage.setSignature("Ima Auto Test");
-         joinTheTeamPage.setAttachResumeBtn("C:\\Users\\Student\\IdeaProjects\\ECSTesting\\resources\\videos\\puppy.jpg");
-         //joinTheTeamPage.setSubmitApplicationBtn();
+         joinTheTeamPage.setAttachResumeBtn(System.getProperty("user.dir") + "\\resources\\videos\\puppy.jpg");
+         Thread.sleep(1000);
+         joinTheTeamPage.setSubmitApplicationBtn();
 
     }
 }
