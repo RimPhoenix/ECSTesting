@@ -6,16 +6,17 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.LocalFileDetector;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.BuyingProductPage;
+import static org.testng.Assert.assertEquals;
 
 import java.util.Calendar;
 
 public class BuyingProductTests extends BaseTests {
 
-    private WebDriver driver;
-
+   // private WebDriver driver;
 
     @Test
 
@@ -25,6 +26,7 @@ public class BuyingProductTests extends BaseTests {
         buyingProductPage.setChooseGlasses();
         //driver.switchTo().frame(driver.findElement(By.tagName("h1")));
         buyingProductPage.setAddToCart();
+        Thread.sleep(200);
         buyingProductPage.selectODSph("-1.25");
         buyingProductPage.selectOSSph("-4.75");
         buyingProductPage.selectODCyl("+1.00");
@@ -41,8 +43,9 @@ public class BuyingProductTests extends BaseTests {
         cal.add(Calendar.YEAR, 1);
         buyingProductPage.setExpirationDate(todaysDate + Keys.ARROW_UP);
         buyingProductPage.setUploadRx("C:\\Users\\Student\\IdeaProjects\\ECSTesting\\resources\\videos\\puppy.jpg");
-        Thread.sleep(500);
+        Thread.sleep(800);
         buyingProductPage.setAddRxBtn();
+        Thread.sleep(300);
         buyingProductPage.setChooseGlassesType();
         Thread.sleep(200);
         buyingProductPage.setChooseLensesRdoBtn();
@@ -57,15 +60,19 @@ public class BuyingProductTests extends BaseTests {
         buyingProductPage.setPhoneField("913-555-5555");
         buyingProductPage.setShippingRdoBtn();
         buyingProductPage.setReviewOdrBtn();
+        System.out.println("driver= " + driver);
+        Thread.sleep(200);
+//        driver.switchTo().frame(driver.findElement(By.id("vue-checkout")));
+        buyingProductPage.setClickAddNoteField();
         buyingProductPage.setAddNote("Here is the test note I wrote.");
         buyingProductPage.setRefundCheckBox();
+        Thread.sleep(250);
         buyingProductPage.setCreditCardNbr("4111111111111111");
         buyingProductPage.setCardExpDate("0825");
         buyingProductPage.setCardCvvNbr("456");
         buyingProductPage.setCardZip("66225");
         buyingProductPage.setCompleteOdrBtn();
         buyingProductPage.setContShoppingBtn();
-
     }
 
 

@@ -38,6 +38,11 @@
                     <include name="testRegistering"/>
                 </methods>
             </class>
+            <class name="buyingProduct.BuyingProductTests">
+                <methods>
+                    <include name="buySomeGlasses"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

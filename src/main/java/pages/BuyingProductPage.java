@@ -45,7 +45,7 @@ public class BuyingProductPage {
     private By uploadRx = By.className("custom-file-input");
     private By addRxBtn = By.xpath("//button[@class='btn btn-secondary']");
     private By chooseGlassesType = By.xpath("//div[5]");
-    private By chooseLensesRdoBtn = By.xpath("//li[2]//label[1]//*[local-name()='svg'][2]/*[name()='path'][1]");
+    private By chooseLensesRdoBtn = By.xpath("//li[2]//label[1]");
     private By continueBtn = By.xpath("//button[@class='btn btn-primary']");
     private By firstNameField = By.id("first_name");
     private By lastNameField = By.id("last_name");
@@ -57,14 +57,15 @@ public class BuyingProductPage {
     private By phoneField = By.id("phone");
     private By shippingRdoBtn = By.xpath("//li[1]//label[1]//*[local-name()='svg']");
     private By reviewOdrBtn = By.xpath("//button[contains(text(),'Review Your Order')]");
-    private By addNote = By.tagName("textarea");
-    private By refundCheckBox = By.xpath("//label[contains(text(),'I have read and agree to the')]//*[local-name()='svg']");
+    private By clickAddNoteField = By.cssSelector("textarea[placeholder='(optional)']");
+    private By addNote = By.xpath("//textarea[@placeholder='(optional)']");
+    private By refundCheckBox = By.xpath("//label[contains(text(),'I have read and agree to the')]");
     private By creditCardNbr = By.id("sq-card-number");
     private By cardExpDate = By.id("sq-expiration-date");
     private By cardCvvNbr = By.id("sq-cvv");
     private By cardZip = By.id("sq-postal-code");
     private By completeOdrBtn = By.id("sq-creditcard");
-    private By contShoppingBtn = By.linkText("Continue Shopping");
+    private By contShoppingBtn = By.xpath("//a[@class='btn btn-primary']");
 
     public void setChooseGlasses() {
         WebDriverWait wait = new WebDriverWait(driver, 2);
@@ -131,6 +132,8 @@ public class BuyingProductPage {
 
     public void setReviewOdrBtn(){driver.findElement(reviewOdrBtn).click();}
 
+    public void setClickAddNoteField(){driver.findElement(clickAddNoteField).click();}
+
     public void setAddNote(String note){driver.findElement(addNote).sendKeys(note);}
 
     public void setRefundCheckBox(){driver.findElement(refundCheckBox).click();}
@@ -143,7 +146,11 @@ public class BuyingProductPage {
 
     public void setCardZip(String zip){driver.findElement(cardZip).sendKeys(zip);}
 
-    public void setCompleteOdrBtn(){driver.findElement(completeOdrBtn).click();}
+    public void setCompleteOdrBtn(){WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.elementToBeClickable(completeOdrBtn));
+        driver.findElement(completeOdrBtn).click();}
 
-    public void setContShoppingBtn(){driver.findElement(contShoppingBtn).click();}
+    public void setContShoppingBtn(){WebDriverWait wait = new WebDriverWait(driver, 5);
+        wait.until(ExpectedConditions.elementToBeClickable(contShoppingBtn));
+        driver.findElement(contShoppingBtn).click();}
 }
